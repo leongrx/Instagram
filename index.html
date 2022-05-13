@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+
+    <script src="./js/script.js" defer></script>
+    <script src="./js/template.js" defer></script>
+    <script src="./js/user.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body onload="render()">
+
+    <!-- ====== INSTAGRAM-HEADER ====== -->
+
+    <div class="insta-header">
+        <div class="insta-logo header-width">
+            <img src="./img/instagram-icon.png">
+        </div>
+        <div class="insta-header-input header-width">
+            <div class="search-icon"><img src="./img/search.png"><input type="text" placeholder="Suchen" id="search" onchange="filterPost()"></div>
+        </div>
+        <div class="insta-header-icons header-width">
+            <img src="./img/home.png">
+            <img src="./img/send.png">
+            <img src="./img/plus.png">
+            <img src="./img/compass.png">
+            <img id="imgSwitchHeader" onclick="heartFilledHeader()" src="./img/heart.png">
+            <img id="profilpicture" src="./img/profilpicture.jpg">
+        </div>
+    </div>
+
+    <!-- ====== INSTAGRAM-CONTENT-LEFT ====== -->
+    <div class="insta-content">
+        <div class="insta-left">
+           <!-- === INSTAGRAM-LEFT-STORYHEAD ===  -->
+            <div class="insta-left-storyhead" id="insta-left-storyhead">
+                
+            </div>
+            <!-- === INSTAGRAM-LEFT-POST ===  -->
+            <div class="post" id="post">
+    
+            </div>
+        </div>
+        <!-- ====== INSTAGRAM-CONTENT-RIGHT ====== -->
+        <div class="insta-right">
+            <div class="profile" id="profile">
+                
+            </div>
+            <div class="suggestions" id="suggestions">
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>

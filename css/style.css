@@ -1,0 +1,510 @@
+/* ====== COLORS ====== */
+:root {
+    --scrollbarBG: #CFD8DC;
+    --thumbBG: #90A4AE;
+}
+
+/* ====== GLOBAL ====== */
+
+body {
+    margin: 0;
+    font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    background-color: #fafafa;
+}
+
+/* ====== INSTAGRAM-HEADER ====== */
+
+.insta-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: -webkit-fill-available;
+    height: 64px;
+    padding: 0 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+}
+
+.header-width {
+    width: calc(100% / 3);
+}
+
+.insta-logo img {
+    cursor: pointer;
+}
+
+.insta-header-input input {
+    min-width: 125px;
+    width: 210px;
+    cursor: text;
+    border: 1px solid #efefef;
+    border-radius: 12px;
+    padding: 8px 48px;
+    background-color: #efefef;
+    outline-color: #efefef;
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-icon img {
+    position: relative;
+    left: 32px;
+    width: 24px;
+}
+
+.insta-header-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.insta-header-icons img {
+    width: 24px;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+#profilpicture {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ====== INSTAGRAM-CONTENT ====== */
+
+/* === INSTAGRAM-LEFT === */
+
+.insta-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    margin-top: 65px;
+    max-width: 935px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.insta-left-storyhead {
+    display: flex;
+    align-items: center;
+    width: 470px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 8px 0;
+    overflow-x: auto;
+    margin-top: 16px;
+    margin-right: 32px;
+    background-color: #ffffff;
+}
+
+.insta-left-storyhead::-webkit-scrollbar {
+    height: 12px;
+  }
+.insta-left-storyhead {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG);
+}
+.insta-left-storyhead::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+.insta-left-storyhead::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+.insta-left-storyprofil {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.username {
+    max-width: 64px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.insta-left-storyprofil img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+/* === INSTAGRAM-LEFT-POST === */
+
+.post {
+    width: 470px;
+    margin-top: 16px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.leftPost {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.post-user-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-user-img img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.post-user-img span {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.more img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.post-img img {
+    width: 469px;
+    height: 469px;
+    object-fit: cover;
+}
+
+.post-description {
+    margin-left: 12px;
+}
+
+.post-description-icons {
+    margin-top: 8px;
+}
+
+.post-description-icons img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.post-description-icons img:nth-of-type(4) {
+    margin-left: 340px;
+}
+
+.like-static {
+    display: flex;
+    align-items: center;
+}
+
+.like-static img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.like-static span {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.post-content span:nth-of-type(1) {
+    font-weight: 600;
+}
+
+.post-content span:nth-of-type(1):hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.view-comments {
+    display: flex;
+    flex-direction: column;
+}
+
+.view-comments p{
+    margin-bottom: 0;
+}
+
+.view-comments p:nth-of-type(odd) {
+    color: #000000;
+    font-weight: 600;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.loadedComment {
+    display: flex;
+    flex-direction: row;
+}
+
+.comments-date p {
+    font-size: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #8e8e8e;
+}
+
+.description-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.description-input img {
+    width: 24px;
+    cursor: pointer;
+}
+
+.description-input span {
+    cursor: pointer;
+    color: #0095f6;
+}
+
+.emoji-part input {
+    border: none;
+    margin: 4px 8px;
+    outline-color: #ffffff;
+}
+
+.emoji-part {
+    display: flex;
+    align-items: center;
+}
+
+/* === INSTAGRAM-RIGHT === */
+
+.insta-right {
+    display: flex;
+    align-items: center;
+    height: 125px;
+    width: 319px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 95px;
+    width: 319px;
+}
+
+.profile-img img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.insta-user {
+    min-width: 160px;
+}
+
+.my-username span {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.my-fullname span {
+    color: #aeaeae;
+}
+
+.change-user span {
+    color: #0095f6;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.suggestion-for-you {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.suggestion-for-you span:nth-of-type(1) {
+    color: #8e8e8e;
+    font-size: 14px;
+}
+
+.suggestion-for-you span:nth-of-type(2) {
+    cursor: pointer;
+}
+
+.suggestions {
+    position: fixed;
+    top: 200px;
+    width: inherit;
+}
+
+.suggestion {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.suggestion img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.suggestion-content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.suggestion-content span:nth-of-type(1) {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.suggestion-content span:nth-of-type(1):hover {
+    text-decoration: underline;
+}
+
+.suggestion-content span:nth-of-type(2) {
+    font-weight: 400;
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+.follow {
+    margin-left: 113px;
+    color: #0095f6;
+    font-weight: 600;
+}
+
+.follow span {
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+
+    .insta-right {
+        display: none;
+    }
+
+    .post-description-icons img:nth-of-type(4) {
+        margin-left: 190px;
+    }
+
+    .insta-content {
+        margin-top: 81px;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    .insta-header-icons img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .insta-header-input {
+        display: none;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .insta-header-icons img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .insta-header-input {
+        display: none;
+    }
+
+    .insta-left-storyhead {
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 399px;
+    }
+
+    .post {
+        margin-left: auto;
+        margin-right: auto;
+        width: 399px;
+    }
+
+    .post-img img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .post-description-icons img:nth-of-type(4) {
+        margin-left: 190px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .insta-left-storyhead {
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 319px;
+    }
+
+    .post {
+        margin-left: auto;
+        margin-right: auto;
+        width: 319px;
+    }
+
+    .post-img img {
+        width: 320px;
+        height: 320px;
+    }
+
+    .insta-header-icons img {
+        width: 24px;
+        padding: 0 4px;
+    }
+
+}
